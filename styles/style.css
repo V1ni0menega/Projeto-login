@@ -19,14 +19,13 @@
 
 body,html{
  background: #5f2c82;
- height: 100vh;
- width: 100vw;
- 
+ height: 100vh; 
+ overflow-y: hidden;
 }
 main{
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 section#login{
 
@@ -37,33 +36,96 @@ section#login{
   overflow: hidden;
 
   background-color: white;
-  width: 250px;
-  height: 500px;
+  width: 300px;
+  height: 550px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px rgb(0,0, 0.450);
+  box-shadow: 0px 0px 10px rgb(0,0, 0.45);
 
   transition:  width 0.3s, height 0.3s;
   transition-timing-function:  ease;
 }
 section#login > article#imagem{
   display: block;
-  background: #5f2c82 url(../imagens/patter01.jpg);
+  background: #5f2c82 url(../imagens/patter01.jpg) no-repeat;
   height: 200px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }section#login > article#formulario{
   display: block;
   padding: 10px;
 }
+div#formulario{
+  padding: 5px;
+}
 div#formulario > h1{
+  padding: 10px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 div#formulario > p {
-  font-size: 0.8em;
+  margin: 10px;
+  font-size: 0.9em;
+}
+div.campo > label{
+  display: none;
+}
+form > div.campo{
+  background-color: #5f2c82;
+  display: block;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+div.campo> i{
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+
+}
+div.campo  input{
+  background-color: #49a09d;
+  font: 1em;
+  width: calc(100% - 60px);
+  transform: translateY(-13px);
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 5px;
 }
 div#formulario >h1{
   font-size: 2em;
 }
+.forme{
+  margin:10px 1px;
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 50px;
+  background-color: #49a09d ;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 
+}
+.forme:hover{
+  background-color: #36706e ;
+
+}
+a.botao{
+  margin:10px 3px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #36706e;
+  border: 1px solid;
+}
+a.botao:hover{
+  background-color: #5cbbb7;
+}
