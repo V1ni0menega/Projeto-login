@@ -18,7 +18,7 @@
 }
 
 body,html{
- background: #5f2c82;
+ background: #9f53d2;
  height: 100vh; 
  overflow-y: hidden;
 }
@@ -35,9 +35,9 @@ section#login{
   transform: translate(-50%,-50%);
   overflow: hidden;
 
-  background-color: white;
+  background-color: transparent;
   width: 300px;
-  height: 550px;
+  height: 555px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgb(0,0, 0.45);
 
@@ -55,44 +55,47 @@ section#login > article#imagem{
   padding: 10px;
 }
 div#formulario{
-  padding: 5px;
+  padding: 8px;
 }
 div#formulario > h1{
-  padding: 10px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.77);
   text-align: center;
   margin-bottom: 15px;
 }
 div#formulario > p {
-  margin: 10px;
-  font-size: 0.9em;
+  color: rgb(0, 0, 0);
+  margin: 2px;
+  font-size: 1em;
 }
 div.campo > label{
-  display: none;
+  display: none;;
 }
-form > div.campo{
-  background-color: #5f2c82;
-  display: block;
+form > div.campo {
+  padding: 3px;
+  position: relative;
+  background-color: #000000;
   width: 100%;
-  height: 35px;
+  height: 40px;
   border-radius: 5px;
-  margin: 5px 0px;
+  margin: 4px 2px;
 }
-div.campo> i{
-  color: white;
-  font-size: 2em;
-  width: 40px;
-  padding: 5px;
-
+.campo i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color:black;
+  font-size: 1.5em;
+  z-index: 2;
 }
-div.campo  input{
-  background-color: #49a09d;
-  font: 1em;
-  width: calc(100% - 60px);
-  transform: translateY(-13px);
+.campo input {
+  width: 100%;
   height: 100%;
   border: 0;
-  border-radius: 8px;
-  padding: 5px;
+  border-radius: 5px;
+  padding-left: 40px; /* espaço pro ícone */
+  background-color: #94cfcd;
+  outline: none;
 }
 div#formulario >h1{
   font-size: 2em;
@@ -102,11 +105,11 @@ div#formulario >h1{
   display: block;
   font-size: 1em;
   width: 100%;
-  height: 50px;
+  height: 40px;
+  border-radius: 5px;
   background-color: #49a09d ;
   color: white;
-  border: none;
-  border-radius: 5px;
+  border: 3px solid black;
   cursor: pointer;
 
 }
@@ -115,7 +118,7 @@ div#formulario >h1{
 
 }
 a.botao{
-  margin:10px 3px;
+  padding: 4px;
   display: block;
   text-align: center;
   width: 100%;
@@ -123,9 +126,16 @@ a.botao{
   background-color: white;
   border-radius: 5px;
   text-decoration: none;
-  color: #36706e;
-  border: 1px solid;
+  color: #060606;
+  border: 3px solid black;
 }
 a.botao:hover{
   background-color: #5cbbb7;
+}
+.campo > input:focus-within{
+  background: linear-gradient(white);
+  border: none;
+}
+.campo > input:hover{
+  background-color: #56b3af;
 }

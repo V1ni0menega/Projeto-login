@@ -6,7 +6,11 @@
   }
   section#login{
     width:80vw;
+    height: 350px;
   }  
+  div#formulario > p{ 
+    color: #94cfcd;
+  }
   section#login > article#imagem{
     float: left;
     width: 30%;
@@ -23,6 +27,7 @@
   }
   section#login{
     width: 990px;
+    height: 350px;
   }
   section#login > article#imagem {
     float: right;
