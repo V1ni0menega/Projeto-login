@@ -23,9 +23,13 @@ body,html{
  overflow-y: hidden;
 }
 main{
-  position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 section#login{
 
